@@ -850,7 +850,7 @@ img {
   .delivery__line {
     transform: rotate(90deg);
     left: -350px;
-    top: 40px;
+    top: 65px;
   }
 
   .delivery__list {
