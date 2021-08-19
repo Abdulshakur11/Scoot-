@@ -1,0 +1,36 @@
+/* FONTS */
+
+/* space-mono-regular - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/space-mono-v6-latin-regular.eot');
+  src: url('../fonts/space-mono-v6-latin-regular.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/space-mono-v6-latin-regular.woff2') format('woff2'),
+       url('../fonts/space-mono-v6-latin-regular.woff') format('woff'), 
+       url('../fonts/space-mono-v6-latin-regular.ttf') format('truetype'), 
+       url('../fonts/space-mono-v6-latin-regular.svg#SpaceMono') format('svg'); 
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/space-mono-v6-latin-700.eot'); 
+  src: url('../fonts/space-mono-v6-latin-700.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/space-mono-v6-latin-700.woff2') format('woff2'),
+       url('../fonts/space-mono-v6-latin-700.woff') format('woff'),
+       url('../fonts/space-mono-v6-latin-700.ttf') format('truetype'),
+       url('../fonts/space-mono-v6-latin-700.svg#SpaceMono') format('svg');
+}
+
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('LexendDeca-Regular.woff2') format('woff2'),
+      url('LexendDeca-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,27 @@
+@mixin list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+//  BUTTON STYLE
+
+@mixin  site-button {
+  width: 180px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: $white;
+  background-color: $yellow;
+  border: 3px solid $yellow;
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+  transition: all 0.3s ease;
+}
+
+@mixin breakpoint-down ($screen-width) {
+  @media only screen and (max-width: $screen-width) {
+    @content
+  }
+}

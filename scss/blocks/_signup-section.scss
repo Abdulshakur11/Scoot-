@@ -1,0 +1,90 @@
+// SIGN UP SECTION STYLES
+
+.signup-section {
+  background-color: $Dark-Navy;
+  padding-top: 102px;
+  padding-bottom: 102px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 495px 150px;
+  background-image: url("/images/sing-up-bgimg.png");
+}
+
+.sing-up__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up__title {
+  width: 415px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: $white;
+  margin: 0;
+}
+
+.sign-up__right {
+  margin-left: auto;
+}
+
+.sign-right__img {
+  transition: 0.3s ease;
+}
+
+.sign-right__img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 0.50rem rgb(20, 173, 220));
+}
+
+.sign-right__img:active {
+  transform: scale(0.90);
+}
+
+// RESPONSIVE
+
+@include breakpoint-down (1024px) {
+  .signup-section {
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-position: center 150px;
+  }
+
+  .sing-up__wrapper {
+    flex-direction: column;
+  }
+
+  .sign-up__title {
+    width: 457px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sign-up__right {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sign-right__img {
+    width: 113px;
+    height: 43px;
+  }
+}
+
+@include breakpoint-down (767px) {
+  .signup-section {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background-position: -620px 150px;
+  }
+
+  .sign-up__title {
+    width: 280px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}

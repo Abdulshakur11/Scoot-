@@ -1,0 +1,160 @@
+// INTRO SECTION STYLES
+
+.intro-section {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/Bitmap.png");
+
+}
+
+.intro__bgcolor {
+  height: 100vh;
+  background-color: #475f859f;
+}
+
+.intro__wrapper {
+  padding-top: 153px;
+}
+
+.intro__title {
+  width: 500px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: $white;
+  margin: 0;
+}
+
+.intro__text {
+  position: relative;
+  width: 405px;
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: $white;
+  margin: 0;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.intro__text {
+  &::before {
+    position: absolute;
+    display: block;
+    width: 202px;
+    height: 15px;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("/images/intro-short-line.png");
+    left: -300px;
+    top: 40px;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    width: 446px;
+    height: 150px;
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url("/images/intro-big-line.png");
+    left: 500px;
+    top: 40px;
+  }
+}
+
+.intro__button-wrapper {
+  width: 180px;
+}
+
+.intro__button {
+  @include site-button;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.intro__button:hover {
+  background-color: transparent;
+  color: $yellow;
+}
+
+.intro__button:active {
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+// RESPONSIVE
+
+@include breakpoint-down (1030px) {
+  .intro__wrapper {
+    padding-top: 170px;
+  }
+
+  .intro__title {
+    width: 573px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro__text {
+    width: 573px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+  }
+
+  .intro__button-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .intro__button {
+    margin: 0;
+  }
+
+  .intro__text {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: 115px;
+      left: -230px;
+    }
+  }
+
+}
+
+
+@include breakpoint-down (600px) {
+  .intro__wrapper {
+    padding-top: 150px;
+  }
+
+  .intro__title {
+    width: 300px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .intro__text {
+    width: 300px;
+    margin-top: 24px;
+  }
+
+  .intro__text {
+    &::after {
+      top: 125px;
+      left: -400px;
+    }
+  }
+}
